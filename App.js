@@ -25,7 +25,11 @@ export default function App() {
 
               return <Icon name={iconName} size={size} color={color} />;
             },
-            tabBarActiveTintColor: "tomato",
+            tabBarStyle: {
+              backgroundColor: "#131514",
+              paddingBottom: 5,
+            },
+            tabBarActiveTintColor: "#0f95ca",
             tabBarInactiveTintColor: "gray",
           })}
         >
