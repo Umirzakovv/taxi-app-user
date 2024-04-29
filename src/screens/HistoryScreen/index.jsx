@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Dimensions, Text, View } from "react-native";
 
 const HistoryScreen = () => {
+  const screenHeight = Dimensions.get("window").height;
   return (
-    <View>
+    <View style={{ height: screenHeight, backgroundColor: "#131514" }}>
       <Text>HistoryScreen</Text>
     </View>
   );

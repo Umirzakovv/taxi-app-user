@@ -9,7 +9,6 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <>
       <NavigationContainer>
         <Tab.Navigator
           screenOptions={({ route }) => ({
@@ -38,6 +37,5 @@ export default function App() {
           <Tab.Screen name="Профиль" component={ProfileScreen} />
         </Tab.Navigator>
       </NavigationContainer>
-    </>
   );
 }
