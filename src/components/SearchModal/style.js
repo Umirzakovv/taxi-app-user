@@ -16,4 +16,17 @@ export const styles = StyleSheet.create({
     color: "grey",
     marginLeft: 10,
   },
+  orderView: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginHorizontal: 5
+  },
+  button: {
+    margin: 10
+  },
+  text: {
+    fontSize: 16,
+    color: "grey",
+    paddingVertical: 20,
+  },
 });
