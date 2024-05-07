@@ -15,10 +15,11 @@ const HistoryScreen = () => {
       >
         <Text
           style={{
-            color: "#fff",
+            fontSize: 30,
+            fontWeight: "bold",
             textAlign: "center",
-            fontSize: 20,
-            marginBottom: 20,
+            color: "#fff",
+            marginVertical: 20,
           }}
         >
           История поездки

@@ -1,9 +1,10 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import OrdersList from "../OrdersList";
 import SearchScreen from "../SearchScreen";
+import OrderSingleScreen from "../OrderSingleScreen";
+import OrdersListScreen from "../OrdersListScreen";
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 const SearchStack = () => {
   return (
     <Stack.Navigator
@@ -14,7 +15,8 @@ const SearchStack = () => {
       }}
     >
       <Stack.Screen name="SearchScreen" component={SearchScreen} />
-      <Stack.Screen name="OrdersList" component={OrdersList} />
+      <Stack.Screen name="OrdersListScreen" component={OrdersListScreen} />
+      <Stack.Screen name="OrderSingleScreen" component={OrderSingleScreen} />
     </Stack.Navigator>
   );
 };

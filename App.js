@@ -1,11 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/FontAwesome";
-import SearchScreen from "./src/screens/SearchScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
 import HistoryScreen from "./src/screens/HistoryScreen";
 import ChatScreen from "./src/screens/Chat";
-import StackScreen from "./src/screens/SearchStack";
 import SearchStack from "./src/screens/SearchStack";
 
 const Tab = createBottomTabNavigator();

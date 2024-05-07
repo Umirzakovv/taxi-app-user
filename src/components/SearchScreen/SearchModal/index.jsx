@@ -19,7 +19,6 @@ const SearchModal = ({ navigation }) => {
   const [modal, setModal] = useState(false);
   const [reservedSeats, setReservedSeats] = useState(1);
   const [date, setDate] = useState(new Date());
-  
 
   return (
     <View style={styles.inputSearchModal}>
@@ -57,7 +56,7 @@ const SearchModal = ({ navigation }) => {
       <Button
         bgColor="#0f95ca"
         title="Поиск"
-        onPress={() => navigation.navigate("OrdersList")}
+        onPress={() => navigation.navigate("OrdersListScreen")}
       />
 
       <Modal
