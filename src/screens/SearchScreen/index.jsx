@@ -2,11 +2,11 @@ import React from "react";
 import { Dimensions, ScrollView, Text, View } from "react-native";
 import SearchModal from "../../components/SearchScreen/SearchModal";
 import { styles } from "./style";
+import { globalStyles } from "../../global-css";
 
 const SearchScreen = ({ navigation }) => {
-  const screenHeight = Dimensions.get("window").height;
   return (
-    <ScrollView style={[styles.container, { height: screenHeight }]}>
+    <ScrollView style={globalStyles.mainContainer}>
       <View>
         <Text style={styles.screenTitle}>Поездки на ваш выбор</Text>
         <Text style={styles.screenTitle}>по самым низким</Text>

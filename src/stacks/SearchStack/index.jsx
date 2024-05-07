@@ -1,8 +1,8 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import SearchScreen from "../SearchScreen";
-import OrderSingleScreen from "../OrderSingleScreen";
-import OrdersListScreen from "../OrdersListScreen";
+import SearchScreen from "../../screens/SearchScreen";
+import OrderSingleScreen from "../../screens/OrderSingleScreen";
+import OrdersListScreen from "../../screens/OrdersListScreen";
 
 const Stack = createStackNavigator();
 const SearchStack = () => {

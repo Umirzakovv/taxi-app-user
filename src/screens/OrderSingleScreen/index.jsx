@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { styles } from "./styles";
 import BackButton from "../../components/reusable/BackButton/index";
+import { globalStyles } from "../../global-css";
 
 const OrderSingleScreen = () => {
   return (
-    <View style={styles.wrapper}>
+    <View style={globalStyles.mainContainer}>
       <BackButton />
       <Text style={{ color: "red" }}>Order Single screen</Text>
     </View>

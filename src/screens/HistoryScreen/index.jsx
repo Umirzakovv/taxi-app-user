@@ -1,17 +1,17 @@
 import React from "react";
 import { Dimensions, ScrollView, Text, View } from "react-native";
 import OrderCard from "../../components/reusable/OrderCard";
+import { globalStyles } from "../../global-css";
 
 const HistoryScreen = () => {
   const screenHeight = Dimensions.get("window").height;
   return (
     <ScrollView>
       <View
-        style={{
+        style={[globalStyles.mainContainer, {
           height: screenHeight,
           backgroundColor: "#131514",
-          padding: 20,
-        }}
+        }]}
       >
         <Text
           style={{
@@ -19,7 +19,7 @@ const HistoryScreen = () => {
             fontWeight: "bold",
             textAlign: "center",
             color: "#fff",
-            marginVertical: 20,
+            marginBottom: 20
           }}
         >
           История поездки
