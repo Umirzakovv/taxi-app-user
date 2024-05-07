@@ -5,6 +5,8 @@ import SearchScreen from "./src/screens/SearchScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
 import HistoryScreen from "./src/screens/HistoryScreen";
 import ChatScreen from "./src/screens/Chat";
+import StackScreen from "./src/screens/SearchStack";
+import SearchStack from "./src/screens/SearchStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -33,9 +35,14 @@ export default function App() {
           },
           tabBarActiveTintColor: "#0f95ca",
           tabBarInactiveTintColor: "gray",
+          headerShown: false,
         })}
       >
-        <Tab.Screen name="Искать" component={SearchScreen} />
+        <Tab.Screen
+          name="Искать"
+          component={SearchStack}
+          options={{ headerShown: false }}
+        />
         <Tab.Screen name="Поездки" component={HistoryScreen} />
         <Tab.Screen name="Входящие" component={ChatScreen} />
         <Tab.Screen name="Профиль" component={ProfileScreen} />

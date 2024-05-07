@@ -4,7 +4,13 @@ import IconButton from "../../reusable/IconButton";
 import { styles } from "./styles";
 import Button from "../../reusable/Button";
 
-const BookingModal = ({ modal, setModal, reservedSeats, setReservedSeats }) => {
+const BookingModal = ({
+  modal,
+  setModal,
+  reservedSeats,
+  setReservedSeats,
+  
+}) => {
   const screenHeight = Dimensions.get("window").height;
   const handleBookingPress = () => {
     setModal(!modal);
@@ -18,6 +24,10 @@ const BookingModal = ({ modal, setModal, reservedSeats, setReservedSeats }) => {
     if (reservedSeats > 1) {
       setReservedSeats(reservedSeats - 1);
     }
+  };
+
+  const handleFormSubmit = () => {
+    setModal(false);
   };
   return (
     <View style={[styles.modalView, styles.shadow, { height: screenHeight }]}>
@@ -46,7 +56,7 @@ const BookingModal = ({ modal, setModal, reservedSeats, setReservedSeats }) => {
       <Button
         title="Бронировать"
         bgColor="#0f95ca"
-        onPress={() => setModal(false)}
+        onPress={handleFormSubmit}
       />
     </View>
   );

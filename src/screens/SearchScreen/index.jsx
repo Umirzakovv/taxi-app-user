@@ -1,9 +1,9 @@
 import React from "react";
 import { Dimensions, ScrollView, Text, View } from "react-native";
-import SearchModal from "../../components/SearchModal";
+import SearchModal from "../../components/SearchScreen/SearchModal";
 import { styles } from "./style";
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
   const screenHeight = Dimensions.get("window").height;
   return (
     <ScrollView style={[styles.container, { height: screenHeight }]}>
@@ -12,7 +12,7 @@ const SearchScreen = () => {
         <Text style={styles.screenTitle}>по самым низким</Text>
         <Text style={styles.screenTitle}>ценам</Text>
       </View>
-      <SearchModal />
+      <SearchModal navigation={navigation} />
     </ScrollView>
   );
 };
