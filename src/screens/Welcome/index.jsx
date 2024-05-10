@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { globalStyles } from "../../global-css";
 
-const Welcome = () => {
+const Welcome = ({ navigation }) => {
   return (
     <View style={globalStyles.mainContainer}>
       <Text style={globalStyles.mainTitle}>Добро пожаловать</Text>
@@ -18,7 +18,12 @@ const Welcome = () => {
         />
       </View>
       <View style={styles.buttonWrapper}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            navigation.navigate("LoginScreen");
+          }}
+        >
           <Text style={styles.buttonText}>Авторизация</Text>
         </TouchableOpacity>
       </View>
